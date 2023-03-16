@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/9c33766163.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="flex">
+
+    <section class="calc flex flex--direction gap">
+      <section class="calc__head-section gap flex flex--column">
+
+        <section class="calc__screen flex">
+          <input type="text" value="" class="calc__output screen" readonly></input>
+          <input type="text" placeholder="0" class="calc__input screen" readonly></input>
+        </section>
+
+        <section class="calc__control flex flex--direction">
+
+          <section class="container flex">
+            <button class="calc__power btn btn--circle">
+            <img src="icons/power-off-solid.svg" alt="">
+            </button>
+            <p>Power</p>
+          </section>
+
+          <section class="container flex">
+            <button class="calc__sound btn btn--circle">
+            <img class="sound-icon" src="icons/volume-1.svg" alt="">
+            </button>
+            <p>Sound</p>
+          </section>
+
+        </section>
+        
+      </section>
+
+
+      <section class="calc__btn-section gap">
+        <button class="btn btn--square del">DEL</button>
+        <button class="btn btn--square clear">C</button>
+        <button value="%" class="btn btn--square percentage">%</button>
+        <button value="/" class="btn btn--square ">÷</button>
+
+        <button value="1" class="btn btn--square ">1</button>
+        <button value="2" class="btn btn--square ">2</button>
+        <button value="3" class="btn btn--square ">3</button>
+        <button value="*" class="btn btn--square multiply ">×</button>
+
+        <button value="4" class="btn btn--square ">4</button>
+        <button value="5" class="btn btn--square ">5</button>
+        <button value="6" class="btn btn--square ">6</button>
+        <button value="+" class="btn btn--square addition">+</button>
+
+        <button value="7" class="btn btn--square ">7</button>
+        <button value="8" class="btn btn--square ">8</button>
+        <button value="9" class="btn btn--square nine ">9</button>
+        <button value="-" class="btn btn--square ">-</button>
+
+        <button value="." class="btn btn--square ">.</button>
+        <button value="0" class="btn btn--square ">0</button>
+        <button class="btn btn--square result">RESULT</button>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
