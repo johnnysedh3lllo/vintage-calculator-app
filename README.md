@@ -18,7 +18,7 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 
 - Character Display up to 12 (anything beyond that is a bug, not a feature lol).
 - Basic arithmetic operations
-- Vintage and responsive design
+- Vintage UI and responsive design
 - Screen clearing
 - Character deletion
 - Micro button-click interactions
