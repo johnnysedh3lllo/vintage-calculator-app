@@ -54,7 +54,7 @@ I'm always excited at the opportunity to learn practical, efficient, and overall
 
 Thanks to everyone that helped me build this.
 
-- [Zxcodes' calculator app](https://github.com/zxcodes/Calculator/blob/master/scripts/script.js)
+- [Zxcodes' calculator app](https://github.com/zxcodes/Calculator)
 - Patrick Imhakhawo's UX suggestions for mobile screens.
 - Google
 - StackOverflow
