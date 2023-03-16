@@ -12,7 +12,15 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 - You can also delete a character by pressing "D" on your keyboard and clear the screen by pressing "C" as well as clicking the buttons on the screen.
 - Calculating the square of a number can be done by pressing the multiplication key twice eg: "5^2" can be written as "5\*\*".
 
-[insert screenshot or example here, if possible]
+## Screenshots
+### Mobile View
+![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/mobile.png?raw=true)
+
+### Tablet View
+![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/tablet.png?raw=true)
+
+### Desktop View
+![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/desktop.png?raw=true)
 
 ## Features
 
