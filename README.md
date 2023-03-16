@@ -13,13 +13,13 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 - Calculating the square of a number can be done by pressing the multiplication key twice eg: "5^2" can be written as "5\*\*".
 
 ## Screenshots
-### Mobile View
+### Mobile View (off state)
 ![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/mobile.png?raw=true)
 
-### Tablet View
+### Tablet View (off state)
 ![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/tablet.png?raw=true)
 
-### Desktop View
+### Desktop View (off state)
 ![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/desktop.png?raw=true)
 
 ## Features
