@@ -79,25 +79,32 @@ body {
   text-align: end;
   background-color: var(--clr-secondary);
 }
+
 .calc__output {
   font-size: 3rem;
   height: 60%;
+  top: 10px;
 }
+
 .calc__input {
-  border-radius: 15px;
   border-top: 1px solid var(--clr-neutral);
+  border-radius: 15px;
   height: 40%;
   font-size: 2rem;
 }
 
-::placeholder{
-  color: rgb(167, 167, 167);
+::placeholder {
+  color: hsl(0, 0%, 65%);
 }
 
 .calc__control {
   justify-content: space-between;
   gap: 0.5rem;
   font-weight: var(--fw-primary);
+}
+
+.calc__power {
+  background-color: hsl(0, 100%, 50%);
 }
 
 .calc__head-section {
@@ -114,9 +121,19 @@ body {
   grid-column: 3/5;
 }
 
+/* States */
 .power-off {
   translate: 4px 3px;
   box-shadow: 0 0 0 0;
+}
+
+.power-on-clr {
+  background-color: hsl(120, 84%, 50%);
+}
+
+.inactive,
+.power-off {
+  background-color: hsl(39, 50%, 85%);
 }
 
 .error-screen {
@@ -129,7 +146,7 @@ body {
   body {
     align-items: center;
     justify-content: center;
-    background: linear-gradient(290deg, hsl(160, 100%, 75%), hsl(39, 77%, 83%));
+    background: linear-gradient(290deg, hsl(160, 100%, 75%), hsl(39, 80%, 79%));
     background-color: var(--clr-primary);
     padding: 2rem 2rem;
   }

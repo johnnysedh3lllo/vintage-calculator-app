@@ -23,7 +23,10 @@ const errorSound = new Audio("sounds/error.wav");
 //to simulate a button click animation
 const clickedButtonAnimation = (btnElement) => {
   btnElement.classList.add("btn--clicked");
-  clickSound.play();
+
+  if (!btnElement.classList.contains("power-off")) {
+    clickSound.play();
+  }
 
   setTimeout(() => {
     btnElement.classList.remove("btn--clicked");
@@ -77,16 +80,19 @@ const deleteChar = () => {
 
 //to toggle sound
 const soundLogic = () => {
+  const mute = (value) => {
+    powerSound.muted = value;
+    errorSound.muted = value;
+    clickSound.muted = value;
+  };
+
   if (soundIcon.src.includes("volume-1")) {
-    powerSound.muted = true;
-    errorSound.muted = true;
-    clickSound.muted = true;
+    mute(true);
+    soundBtn.classList.add("inactive");
     soundIcon.src = "icons/volume-2.svg";
   } else {
-    powerSound.muted = false;
-    errorSound.muted = false;
-    clickSound.muted = false;
-    clickSound.play();
+    mute(false);
+    soundBtn.classList.remove("inactive");
     soundIcon.src = "icons/volume-1.svg";
   }
 };
@@ -95,6 +101,9 @@ const soundLogic = () => {
 const offState = () => {
   clearScreen();
   inputScreen.setAttribute("placeholder", "");
+  calcScreen.classList.add("inactive");
+  inputScreen.classList.add("inactive");
+  outputScreen.classList.add("inactive");
 
   for (const item of btnElement) {
     item.classList.add("power-off");
@@ -108,8 +117,9 @@ offState();
 
 // Power button click event
 powerBtn.addEventListener("click", function () {
-  if (powerBtn && !this.classList.contains("power-on")) {
+  if (powerBtn && !this.classList.contains("power-on-clr")) {
     //to simulate a power on sequence
+
     for (const item of btnElement) {
       setTimeout(() => {
         item.classList.remove("power-off");
@@ -117,24 +127,26 @@ powerBtn.addEventListener("click", function () {
 
       setTimeout(() => {
         inputScreen.setAttribute("placeholder", "0");
+        calcScreen.classList.remove("inactive");
+        inputScreen.classList.remove("inactive");
+        outputScreen.classList.remove("inactive");
         powerSound.play();
       }, 1000);
     }
-    this.classList.add("power-on");
+    this.classList.add("power-on-clr");
   } else {
     //to initiate a power off sequence
     setTimeout(() => {
       offState();
     }, 500);
 
-    this.classList.remove("power-on");
+    this.classList.remove("power-on-clr");
   }
 });
 
 //to loop over all the Button elements and add button animation to clicked buttons
 for (const item of btnElement) {
   item.addEventListener("click", function () {
-    clickSound.play();
     clickedButtonAnimation(this);
 
     //to ensure that only numbers and operators are printed to the input screen
