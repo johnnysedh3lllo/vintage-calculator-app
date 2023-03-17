@@ -31,7 +31,7 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 - Screen display of up to 12 characters (anything beyond that is a bug, not a feature lol).
 - Basic arithmetic operations
 - Vintage Design
-- responsive design
+- Responsive design
 - Screen clearing
 - Character deletion
 - Micro button-click interactions
