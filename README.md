@@ -13,18 +13,22 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 - Calculating the square of a number can be done by pressing the multiplication key twice eg: "5^2" can be written as "5\*\*".
 
 ## Screenshots
+
 ### Mobile View
+
 ![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/mobile.png?raw=true)
 
 ### Tablet View
+
 ![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/tablet.png?raw=true)
 
 ### Desktop View
+
 ![Calculator Application](https://github.com/johnnysedh3lllo/vintage-calculator-app/blob/main/previews/desktop.png?raw=true)
 
 ## Features
 
-- Character Display up to 12 (anything beyond that is a bug, not a feature lol).
+- Screen display of up to 12 characters (anything beyond that is a bug, not a feature lol).
 - Basic arithmetic operations
 - Vintage Design
 - responsive design
@@ -38,7 +42,7 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 
 ## Unfinished features & Slight bugs
 
-Due to my current skill set, I could not implement the following features for the app, so I would love to collaborate to complete the Implementation of them.
+Due to my current skill set, I could not implement the following features for the app, so I would love to collaborate with you to complete the Implementation of them.
 
 - Percentage calculation
 - Keypress event for the power button
