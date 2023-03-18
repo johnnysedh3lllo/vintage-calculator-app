@@ -44,6 +44,7 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 
 Due to my current skill set, I could not implement the following features for the app, so I would love to collaborate with you to complete the Implementation of them.
 
+- inactive state color for input screens and buttons
 - Percentage calculation
 - Keypress event for the power button
 - Input and Output history display

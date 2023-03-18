@@ -3,6 +3,7 @@ body {
   font-family: var(--ff-primary);
   font-weight: 700;
   color: var(--clr-neutral);
+  flex-direction: column;
 }
 
 /*Utility classes */
@@ -70,6 +71,7 @@ body {
   border-radius: 15px;
   border: 1px solid var(--clr-neutral);
   overflow: hidden;
+  transition: background-color .2s;
 }
 
 .screen {
@@ -78,6 +80,7 @@ body {
   border: 0;
   text-align: end;
   background-color: var(--clr-secondary);
+  transition: background-color .2s;
 }
 
 .calc__output {
@@ -121,6 +124,22 @@ body {
   grid-column: 3/5;
 }
 
+.contact {
+  background-color: var(--clr-accent-100);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 2rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-icon, path:hover {
+  fill: white;
+}
+
 /* States */
 .power-off {
   translate: 4px 3px;
@@ -133,7 +152,7 @@ body {
 
 .inactive,
 .power-off {
-  background-color: hsl(39, 50%, 85%);
+  /* background-color: hsl(39, 50%, 85%); */
 }
 
 .error-screen {
@@ -157,6 +176,12 @@ body {
     box-shadow: 15px 15px 0 0;
     border: 1px solid var(--clr-neutral);
     min-height: 100%;
+  }
+
+  .contact {
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    bottom: 0;
   }
 }
 
