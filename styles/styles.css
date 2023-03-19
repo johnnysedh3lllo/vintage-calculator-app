@@ -159,6 +159,11 @@ path:hover {
   /* background-color: hsl(39, 30%, 79%); */
 }
 
+.mute{
+   background-color: hsl(0, 0%, 64%);
+}
+
+
 .error-screen {
   background-color: var(--clr-accent-200);
   color: var(--clr-accent-100);
