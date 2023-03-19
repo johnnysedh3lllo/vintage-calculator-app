@@ -88,11 +88,11 @@ const soundLogic = () => {
 
   if (soundIcon.src.includes("volume-1")) {
     mute(true);
-    soundBtn.classList.add("inactive");
+    soundBtn.classList.add("mute");
     soundIcon.src = "icons/volume-2.svg";
   } else {
     mute(false);
-    soundBtn.classList.remove("inactive");
+    soundBtn.classList.remove("mute");
     soundIcon.src = "icons/volume-1.svg";
   }
 };
