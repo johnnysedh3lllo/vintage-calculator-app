@@ -22,19 +22,12 @@ body {
 }
 
 .btn--circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
   border-radius: 100px;
 }
 
 .container {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .flex {
@@ -55,6 +48,11 @@ body {
   box-shadow: 0 0 0 0;
 }
 
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
 /* Styles */
 .calc {
   background-color: var(--clr-primary);
@@ -71,7 +69,7 @@ body {
   border-radius: 15px;
   border: 1px solid var(--clr-neutral);
   overflow: hidden;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
 
 .screen {
@@ -80,7 +78,7 @@ body {
   border: 0;
   text-align: end;
   background-color: var(--clr-secondary);
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
 
 .calc__output {
@@ -125,18 +123,24 @@ body {
 }
 
 .contact {
-  background-color: var(--clr-accent-100);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: .5rem 2rem;
+  background-color: var(--clr-secondary);
+  flex-direction: row;
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 .link {
   text-decoration: none;
 }
 
-.link-icon, path:hover {
+.btn--circle,
+.link-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.link-icon,
+path:hover {
   fill: white;
 }
 
@@ -152,7 +156,7 @@ body {
 
 .inactive,
 .power-off {
-  /* background-color: hsl(39, 50%, 85%); */
+  /* background-color: hsl(39, 30%, 79%); */
 }
 
 .error-screen {
@@ -206,11 +210,6 @@ body {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-  }
-
-  .calc__power {
-    width: 2.5rem;
-    height: 2.5rem;
   }
 
   /* Button repositioning */
