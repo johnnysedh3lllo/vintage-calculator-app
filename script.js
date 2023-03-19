@@ -195,10 +195,7 @@ document.addEventListener("keypress", function (event) {
   }
 
   //to calculate input and print result on key press
-  if (
-    (keyPressed === "Enter" || keyPressed === "=") &&
-    !resultBtn.contains("power-off")
-  ) {
+  if (keyPressed === "Enter" || keyPressed === "=") {
     calculationAlgorithm();
     clickedButtonAnimation(resultBtn);
   }
