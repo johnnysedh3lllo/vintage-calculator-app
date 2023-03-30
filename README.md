@@ -1,4 +1,4 @@
-# Basic Vintage-designed Calculator App
+# Basic Calculator App
 
 ## Introduction
 
@@ -30,7 +30,7 @@ To use the calculator app, click on the URL, then first turn on the calculator b
 
 - Screen display of up to 12 characters (anything beyond that is a bug, not a feature lol).
 - Basic arithmetic operations
-- Vintage Design
+- Neo-brutalism Design
 - Responsive design
 - Screen clearing
 - Character deletion
